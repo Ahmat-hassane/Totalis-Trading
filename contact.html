@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez Totalis Trading - Solutions de Commerce International</title>
+    <meta name="description" content="Contactez Totalis Trading pour vos besoins en import, export et commerce général. Envoyez-nous un message et nous vous répondrons rapidement.">
+    <meta name="robots" content="index, follow">
+    <!-- Path to CSS is direct, as contact.html is in the root -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Add these lines in the <head> section after the meta tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <!-- Path to the homepage (index.html) is direct -->
+            <a href="index.html" class="logo">
+    <img src="/img/totalis-logo.jpg" alt="Totalis Trading Logo" class="logo-img"></a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <!-- <span class="sr-only">Menu</span> -->
+                    <div class="hamburger"></div>
+                </button>
+                <ul id="primary-navigation" data-visible="false">
+                    <!-- Path to index.html is direct -->
+                    <li><a href="index.html">Accueil</a></li>
+                    <!-- Paths to other pages go into the /pages/ directory -->
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/nos-produits.html">Nos Produits</a></li>
+                    <li><a href="pages/about.html">À propos</a></li>
+                    <!-- This is the current page -->
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero-section">
+            <div class="container">
+                <h1 class="page-hero-title">Contactez-nous</h1>
+                <p class="page-hero-subtitle">Nous sommes là pour répondre à vos questions et discuter de vos projets.</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section section-padding reveal">
+            <div class="container">
+                <h2 class="section-title">Envoyez-nous un Message</h2>
+                <div class="form-container">
+                    <!-- The action points to contact.php, also in the root -->
+                    <form id="contactForm" action="contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Votre Nom Complet <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Votre Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" placeholder="Demande de renseignements">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande ici..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn primary-btn">Envoyer le Message</button>
+                        </div>
+
+                        <div id="form-messages" class="form-messages"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info-section section-padding bg-light reveal">
+            <div class="container">
+                <h2 class="section-title">Informations de Contact</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@totalistrading.com">contact@totalistrading.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Téléphone</h3>
+                        <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Adresse</h3>
+                        <p>123 Rue du Commerce<br>75000 Paris, France</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer navigation paths must also be correct -->
+        <div class="container">
+             <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Totalis Trading</h3>
+                    <p>Votre partenaire de confiance pour le commerce international.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="pages/nos-produits.html">Nos Produits</a></li>
+                        <li><a href="pages/about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Email: contact@totalistrading.com</p>
+                    <p>Téléphone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Totalis Trading. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS paths are also direct -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
